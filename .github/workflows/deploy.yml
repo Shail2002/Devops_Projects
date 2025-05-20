@@ -74,7 +74,7 @@ jobs:
         run: |-
           docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG .
           docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG
-      
+        working-directory: ./nodeapp
       - name: Deploy to EC2
         env:
           REGISTRY: ${{ steps.ecr-login.outputs.registry }}
