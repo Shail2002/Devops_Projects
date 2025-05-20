@@ -10,9 +10,11 @@ variable "private_key" {
 }
 
 variable "public_key" {
-
+  description = "Public key to associate with the EC2 key pair"
+  type        = string
 }
 
 variable "key_name" {
-  
+  description = "Name to assign to the EC2 key pair"
+  type        = string
 }
