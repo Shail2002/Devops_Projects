@@ -45,7 +45,7 @@ jobs:
 
       - name: Terraform Apply
         run: terraform apply -auto-approve PLAN
-        working-directory: ./terraform
+        working-directory: ./Terraform
       - name: Set output
         id: set-ip
         run: |-
