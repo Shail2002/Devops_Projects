@@ -17,4 +17,5 @@ variable "public_key" {
 variable "key_name" {
   description = "Name to assign to the EC2 key pair"
   type        = string
+  default     = "deployer-key"
 }
